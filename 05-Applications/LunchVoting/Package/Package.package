@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="67d588de-c729-49df-87bf-b3f1caf3a987" solutionId="67d588de-c729-49df-87bf-b3f1caf3a987" resetWebServer="false" sharePointProductVersion="15.0" name="LunchVoting" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="69d6a72f-335f-440a-86ac-35823b9ee3f6" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="88ceab19-6297-4fc0-b404-fee072d314a3" />
+  </projectItems>
+</package>

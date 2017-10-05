@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Lunch Locations" OnQuickLaunch="TRUE" TemplateType="10000" Url="Lists/LunchLocations" Description="Locations people can choose from when voting for lunch."></ListInstance>
+</Elements>
