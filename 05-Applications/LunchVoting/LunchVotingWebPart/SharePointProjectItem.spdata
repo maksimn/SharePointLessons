@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="LunchVotingWebPartUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="LunchVotingWebPart\" Type="ElementManifest" />
+    <ProjectItemFile Source="LunchVotingWebPart.webpart" Target="LunchVotingWebPart\" Type="ElementFile" />
+    <ProjectItemFile Source="LunchVotingWebPartUserControl.ascx" Target="CONTROLTEMPLATES\LunchVoting\LunchVotingWebPart\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="LunchVoting.LunchVotingWebPart" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

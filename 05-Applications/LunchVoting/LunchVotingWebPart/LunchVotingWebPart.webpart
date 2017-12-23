@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="LunchVoting.LunchVotingWebPart.LunchVotingWebPart, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Lunch Voting Results</property>
+        <property name="Description" type="string">Lunch voting results for the current day.</property>
+        <property name="ChromeType" type="chrometype">TitleAndBorder</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

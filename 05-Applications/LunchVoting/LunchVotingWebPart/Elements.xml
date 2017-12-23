@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="LunchVotingWebPart" List="113" Url="_catalogs/wp">
+    <File Path="LunchVotingWebPart\LunchVotingWebPart.webpart" Url="LunchVoting_LunchVotingWebPart.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="SharePoint Realty" />
+    </File>
+  </Module>
+</Elements>
