@@ -46,18 +46,29 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Microsoft.SharePoint" />
     <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\LunchVoteData.cs" />
+    <Compile Include="Classes\LunchVoteDataCollector.cs" />
     <Compile Include="Layouts\LunchVoting\LunchVoting.aspx.cs">
       <DependentUpon>LunchVoting.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Layouts\LunchVoting\LunchVoting.aspx.designer.cs">
       <DependentUpon>LunchVoting.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LunchVotingWebPart\LunchVotingWebPart.cs" />
+    <Compile Include="LunchVotingWebPart\LunchVotingWebPartUserControl.ascx.cs">
+      <DependentUpon>LunchVotingWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LunchVotingWebPart\LunchVotingWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>LunchVotingWebPartUserControl.ascx.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -74,6 +85,12 @@
     </None>
     <None Include="LunchLocations\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{c7c44b17-5784-41e4-911b-54c0bf8b2d69}</SharePointProjectItemId>
+    </None>
+    <None Include="LunchVotingWebPart\LunchVotingWebPart.webpart">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LunchVotingWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f86e15a8-cbb1-45c7-8a1b-7de19ef608be}</SharePointProjectItemId>
     </None>
     <None Include="LunchVoting\LunchVotingInstance\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{50b30445-ed97-4f3e-aa58-972cd63beab7}</SharePointProjectItemId>
@@ -97,6 +114,10 @@
     <Content Include="LunchLocations\Elements.xml" />
     <Content Include="LunchLocations\LunchLocationsInstance\Elements.xml" />
     <Content Include="LunchLocations\Schema.xml" />
+    <Content Include="LunchVotingWebPart\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="LunchVotingWebPart\LunchVotingWebPartUserControl.ascx" />
     <Content Include="LunchVoting\Elements.xml" />
     <Content Include="LunchVoting\LunchVotingInstance\Elements.xml" />
     <Content Include="LunchVoting\Schema.xml" />
