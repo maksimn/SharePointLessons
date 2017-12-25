@@ -10,6 +10,7 @@
         <property name="Title" type="string">Lunch Voting Results</property>
         <property name="Description" type="string">Lunch voting results for the current day.</property>
         <property name="ChromeType" type="chrometype">TitleAndBorder</property>
+        <property name="ResultCount" type="int">3</property>
       </properties>
     </data>
   </webPart>

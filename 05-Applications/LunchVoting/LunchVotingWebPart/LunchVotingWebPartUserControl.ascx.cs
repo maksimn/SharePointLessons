@@ -28,7 +28,24 @@ namespace LunchVoting.LunchVotingWebPart {
         }
 
         private void TopLunchPicks_ItemDataBound(object sender, RepeaterItemEventArgs e) {
-            
+            if (e.Item.ItemType == ListItemType.Item || e.Item.ItemType == ListItemType.AlternatingItem) {
+                LunchVoteData dataItem = e.Item.DataItem as LunchVoteData;
+
+                Literal selection = (Literal)e.Item.FindControl("Selection");
+                if (selection != null) selection.Text = dataItem.Selection;
+
+                Literal voteCount = (Literal)e.Item.FindControl("VoteCount");
+                if (voteCount != null) voteCount.Text = dataItem.VoteCount.ToString();
+
+                Literal votesOnBehalf = (Literal)e.Item.FindControl("VotesOnBehalf");
+                if (votesOnBehalf != null) votesOnBehalf.Text = dataItem.OnBehalfOfCount.ToString();
+
+                Literal yourVote = (Literal)e.Item.FindControl("YourVote");
+                if (yourVote != null) yourVote.Visible = dataItem.YouVoted;
+
+                Literal yourVoteProxy = (Literal)e.Item.FindControl("YourVoteProxy");
+                if (yourVoteProxy != null) yourVoteProxy.Visible = dataItem.YouVotedByProxy;
+            }
         }
 
         private IList<LunchVoteData> GetLunchVoteData() {
@@ -39,7 +56,7 @@ namespace LunchVoting.LunchVotingWebPart {
             }
             return dataCollector
                 .OrderByDescending(i => i.Value.VoteCount)
-                .OrderBy(i => i.Value.Selection)
+                .ThenBy(i => i.Value.Selection)
                 .Take(_parent.ResultCount)
                 .Select(i => i.Value)
                 .ToList();

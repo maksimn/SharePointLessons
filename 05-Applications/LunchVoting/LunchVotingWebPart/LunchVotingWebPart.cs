@@ -15,7 +15,8 @@ namespace LunchVoting.LunchVotingWebPart {
         [WebBrowsable(true)] // чтобы было показано в SharePoint Web Part Editor
         [WebDisplayName("Result Count")]
         [Description("Specifies the number of results to display in the web part.")]
-        [DefaultValue(3)]
+        [DefaultValue(3)] // Это значение также надо задать в файле .webpart. Так нужно для целей сериализации.
+        // Если его не задать в .webpart, оно не будет сериализовано и не получит значения по умолчанию.
         [Category("Behavior")] // только для группировки свойств в редакторе
         [Personalizable(PersonalizationScope.Shared)] // Задает способ хранения значения (общее для всех пользователей)
             // либо каждый пользователь может задать свое значение
