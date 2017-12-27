@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field Type="Choice" 
+         DisplayName="Department" 
+         ID="{8bcf80f8-77bd-45c7-beb1-c3573538b0e4}" 
+         StaticName="SPRDepartment"  
+         Name="SPRDepartment" 
+         Group="SharePoint Realty Site Columns" 
+         Required="TRUE" 
+         Description="Denotes the department the employee works in" 
+         Format="Dropdown" 
+         FillInChoice="FALSE">
+    <CHOICES>
+      <CHOICE>Real Estate</CHOICE>
+      <CHOICE>Lending</CHOICE>
+      <CHOICE>Marketing</CHOICE>
+      <CHOICE>HR</CHOICE>
+      <CHOICE>IT</CHOICE>
+      <CHOICE>Executive</CHOICE>
+    </CHOICES>
+    <Default>HR</Default>
+  </Field>
+  <Field Type="Boolean" DisplayName="SPRAllowsPets" EnforceUniqueValues="FALSE" Indexed="FALSE" Group="SharePoint Realty Site Columns" ID="{ba5ac29b-6678-4c06-a76a-6d4606f6b72b}" SourceID="{4e0432f7-ad01-4500-a72e-7e4ea1d7d9c9}" StaticName="SPRAllowsPets" Name="SPRAllowsPets"><Default>0</Default></Field>
+  <Field Type="Boolean" DisplayName="SPRAllowsSmoking" EnforceUniqueValues="FALSE" Indexed="FALSE" Group="SharePoint Realty Site Columns" ID="{c73e7a36-d894-41ae-994c-1821dfa38caa}" SourceID="{4e0432f7-ad01-4500-a72e-7e4ea1d7d9c9}" StaticName="SPRAllowsSmoking" Name="SPRAllowsSmoking"><Default>0</Default></Field>
+  <Field Type="Currency" DisplayName="SPRDepositAmount" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" LCID="1033" Group="SharePoint Realty Site Columns" ID="{ff3f1b29-0ffe-4e7d-b486-9df6db5424d2}" SourceID="{4e0432f7-ad01-4500-a72e-7e4ea1d7d9c9}" StaticName="SPRDepositAmount" Name="SPRDepositAmount"></Field>
+  <Field Type="Currency" DisplayName="SPRRentalAmount" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" LCID="1033" Group="SharePoint Realty Site Columns" ID="{2b2d2bb7-78b3-4af3-827b-af9e65243048}" SourceID="{4e0432f7-ad01-4500-a72e-7e4ea1d7d9c9}" StaticName="SPRRentalAmount" Name="SPRRentalAmount"></Field>
+</Elements>

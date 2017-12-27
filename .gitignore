@@ -1,8 +1,6 @@
-02-Site Structure
-03-Content
-04-Solutions
-*/*/bin
-*/*/obj
-*/*/pkg
-*/*/pkgobj
-*/*.v12.suo
+**/*/bin
+**/*/obj
+**/*/pkg
+**/*/pkgobj
+**/*.v12.suo
+**/*.csproj.user

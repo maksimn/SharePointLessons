@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharePointRealty", "SharePointRealty\SharePointRealty.csproj", "{7F299677-C0EE-4EFF-AA70-6460DC75948C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharePointRealty.Bussiness", "SharePointRealty.Bussiness\SharePointRealty.Bussiness.csproj", "{08A58295-AE83-4C37-9834-43F8F38FE2A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F299677-C0EE-4EFF-AA70-6460DC75948C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F299677-C0EE-4EFF-AA70-6460DC75948C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F299677-C0EE-4EFF-AA70-6460DC75948C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7F299677-C0EE-4EFF-AA70-6460DC75948C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F299677-C0EE-4EFF-AA70-6460DC75948C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F299677-C0EE-4EFF-AA70-6460DC75948C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{08A58295-AE83-4C37-9834-43F8F38FE2A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08A58295-AE83-4C37-9834-43F8F38FE2A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08A58295-AE83-4C37-9834-43F8F38FE2A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08A58295-AE83-4C37-9834-43F8F38FE2A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

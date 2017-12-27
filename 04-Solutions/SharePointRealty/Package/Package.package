@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="5ba1dfd3-c0f3-49d4-a516-2982b9e1d20d" solutionId="5ba1dfd3-c0f3-49d4-a516-2982b9e1d20d" resetWebServer="false" sharePointProductVersion="15.0" name="SharePointRealty" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <projectOutputAssembly location="SharePointRealty.Bussiness.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\SharePointRealty.Bussiness\SharePointRealty.Bussiness.csproj" />
+  </assemblies>
+  <features>
+    <featureReference itemId="07d8bb00-5573-45b1-a2b1-88e5f75a6d3d" />
+    <featureReference itemId="8aeb9a26-8b82-4863-8cfd-cc1ab97ebd8a" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="f731772e-a87f-4d91-a9d3-b01748e943b4" />
+    <projectItemReference itemId="91051eb5-ccd0-46bd-8c9c-9a63c9446905" />
+  </projectItems>
+</package>

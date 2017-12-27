@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7F299677-C0EE-4EFF-AA70-6460DC75948C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SharePointRealty</RootNamespace>
+    <AssemblyName>SharePointRealty</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADMIN\SharePointRealty\AdminDemo.aspx.cs">
+      <DependentUpon>AdminDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\SharePointRealty\AdminDemo.aspx.designer.cs">
+      <DependentUpon>AdminDemo.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\SharePointRealty\Demo.aspx.cs">
+      <DependentUpon>Demo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\SharePointRealty\Demo.aspx.designer.cs">
+      <DependentUpon>Demo.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ADMIN\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{91051eb5-ccd0-46bd-8c9c-9a63c9446905}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7266ed72-eb6e-48a9-8ea8-821a2bee9007}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\ContentTypes\ContentTypes.feature">
+      <FeatureId>{8aeb9a26-8b82-4863-8cfd-cc1ab97ebd8a}</FeatureId>
+    </None>
+    <None Include="SiteColumns\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{abdc3b29-b931-47cf-a613-942b16107805}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\SiteColumns\SiteColumns.feature">
+      <FeatureId>{07d8bb00-5573-45b1-a2b1-88e5f75a6d3d}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f731772e-a87f-4d91-a9d3-b01748e943b4}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{5ba1dfd3-c0f3-49d4-a516-2982b9e1d20d}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="ADMIN\SharePointRealty\AdminDemo.aspx" />
+    <Content Include="ContentTypes\Elements.xml" />
+    <Content Include="Features\ContentTypes\ContentTypes.Template.xml">
+      <DependentUpon>ContentTypes.feature</DependentUpon>
+    </Content>
+    <Content Include="SiteColumns\Elements.xml" />
+    <Content Include="Features\SiteColumns\SiteColumns.Template.xml">
+      <DependentUpon>SiteColumns.feature</DependentUpon>
+    </Content>
+    <Content Include="Layouts\SharePointRealty\Demo.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SharePointRealty.Bussiness\SharePointRealty.Bussiness.csproj">
+      <Project>{08a58295-ae83-4c37-9834-43f8f38fe2a9}</Project>
+      <Name>SharePointRealty.Bussiness</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

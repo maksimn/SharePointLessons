@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100FB514538F9B04FF491E19977CBFC949F" Name="Listing" Group="SharePoint Realty Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{82642ec8-ef9b-478f-acf9-31f7d45fbc31}" DisplayName="$Resources:core,Title;" Name="LinkTitle" ReadOnly="TRUE" />
+      <FieldRef ID="{475c2610-c157-4b91-9e2d-6855031b3538}" DisplayName="$Resources:core,Full_Name;" Name="FullName" />
+      <FieldRef ID="{fd630629-c165-4513-b43c-fdb16b86a14d}" DisplayName="$Resources:core,Business_Phone;" Name="WorkPhone" />
+      <FieldRef ID="{fce16b4c-fe53-4793-aaab-b4892e736d15}" DisplayName="$Resources:core,E-Mail;" Name="EMail" ReadOnly="FALSE" />
+      <FieldRef ID="{fc2e188e-ba91-48c9-9dd3-16431afddd50}" DisplayName="$Resources:core,Address;" Name="WorkAddress" NumLines="2" Sortable="FALSE" />
+      <FieldRef ID="{6ca7bd7f-b490-402e-af1b-2813cf087b1e}" DisplayName="$Resources:core,City;" Name="WorkCity" />
+      <FieldRef ID="{ceac61d3-dda9-468b-b276-f4a6bb93f14f}" DisplayName="$Resources:core,State_Province;" Name="WorkState" NumLines="2" Sortable="TRUE" />
+      <FieldRef ID="{9a631556-3dac-49db-8d2f-fb033b0fdc24}" DisplayName="$Resources:core,ZIP_Postal_Code;" Name="WorkZip" />
+    </FieldRefs>
+  </ContentType>
+
+  <!-- Parent ContentType: Listing (0x0100FB514538F9B04FF491E19977CBFC949F) -->
+  <ContentType ID="0x0100FB514538F9B04FF491E19977CBFC949F006B4291C0FA0C4560862F274C2D3850BA" Name="Rental Listing" Group="SharePoint Realty Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{ba5ac29b-6678-4c06-a76a-6d4606f6b72b}" DisplayName="SPRAllowsPets" Name="SPRAllowsPets" />
+      <FieldRef ID="{c73e7a36-d894-41ae-994c-1821dfa38caa}" DisplayName="SPRAllowsSmoking" Name="SPRAllowsSmoking" />
+      <FieldRef ID="{ff3f1b29-0ffe-4e7d-b486-9df6db5424d2}" DisplayName="SPRDepositAmount" Required="FALSE" Name="SPRDepositAmount" />
+      <FieldRef ID="{2b2d2bb7-78b3-4af3-827b-af9e65243048}" DisplayName="SPRRentalAmount" Required="FALSE" Name="SPRRentalAmount" />
+    </FieldRefs>
+  </ContentType>
+  <!-- Parent ContentType: Folder (0x0120) -->
+  <ContentType ID="0x012000D1AD8ADDD6C94D66836EF0F784B075D3" Name="SharePointFolder" Group="SharePoint Realty Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{8bcf80f8-77bd-45c7-beb1-c3573538b0e4}" DisplayName="Department" Required="TRUE" Description="Denotes the department the employee works in" Name="SPRDepartment" Format="Dropdown" />
+    </FieldRefs>
+  </ContentType>
+</Elements>
