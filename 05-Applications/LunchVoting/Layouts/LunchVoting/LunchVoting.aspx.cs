@@ -102,7 +102,11 @@ namespace LunchVoting.Layouts.LunchVoting {
                 if (onBehalfVote != null) onBehalfVote.Delete();
                 var vote = list.Items.Add();
                 vote["Selection"] = new SPFieldLookupValue(int.Parse(Selection.SelectedItem.Value), Selection.SelectedItem.Text);
-                if (isOnBehalfVote) vote["OnBehalfOf"] = SPContext.Current.Web.EnsureUser(OnBehalfOf.AllEntities[0].Description);
+                if (isOnBehalfVote) {
+                    // Если в поле OnBehalfOf ввести неправильное имя, то здесь возникнет необработанное исключение
+                    // SPException: The specified user We couldn't find an exact match. could not be found.
+                    vote["OnBehalfOf"] = SPContext.Current.Web.EnsureUser(OnBehalfOf.AllEntities[0].Description);
+                }
                 vote.Update();
 
                 if (existingVote) {
