@@ -55,6 +55,9 @@
   <ItemGroup>
     <Compile Include="Classes\LunchVoteData.cs" />
     <Compile Include="Classes\LunchVoteDataCollector.cs" />
+    <Compile Include="Features\LunchVoting\LunchVoting.EventReceiver.cs">
+      <DependentUpon>LunchVoting.feature</DependentUpon>
+    </Compile>
     <Compile Include="Layouts\LunchVoting\LunchVoting.aspx.cs">
       <DependentUpon>LunchVoting.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -62,6 +65,7 @@
     <Compile Include="Layouts\LunchVoting\LunchVoting.aspx.designer.cs">
       <DependentUpon>LunchVoting.aspx.cs</DependentUpon>
     </Compile>
+    <Compile Include="LunchVotingListEventReceiver.cs" />
     <Compile Include="LunchVotingWebPart\LunchVotingWebPart.cs" />
     <Compile Include="LunchVotingWebPart\LunchVotingWebPartUserControl.ascx.cs">
       <DependentUpon>LunchVotingWebPartUserControl.ascx</DependentUpon>
