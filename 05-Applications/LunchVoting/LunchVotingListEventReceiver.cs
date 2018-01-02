@@ -19,7 +19,7 @@ namespace LunchVoting {
             SPListItem directVote = GetDirectVote(properties.List, votingUser);
             SPListItem onBehalfVote = GetOnBehalfVote(properties.List, votingUser);
 
-            if (directVote != null && onBehalfVote != null) {
+            if (directVote != null || onBehalfVote != null) {
                 properties.Cancel = true;
                 properties.ErrorMessage = "Vote for this user already exists. You cannot vote twice in one day.";
             }
