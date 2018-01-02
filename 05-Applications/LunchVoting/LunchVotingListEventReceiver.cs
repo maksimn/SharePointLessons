@@ -35,7 +35,7 @@ namespace LunchVoting {
         }
 
         public override void ItemDeleting(SPItemEventProperties properties) {
-            if (properties.UserDisplayName !=
+            if (SPContext.Current != null && properties.UserDisplayName !=
                     new SPFieldUserValue(properties.Web, properties.ListItem["Author"].ToString()).LookupValue) {
                 properties.Cancel = true;
                 properties.ErrorMessage = "You cannot delete a vote that you did not create. Please user the voting page.";

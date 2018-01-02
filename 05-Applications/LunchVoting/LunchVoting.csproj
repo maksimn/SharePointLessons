@@ -66,6 +66,7 @@
       <DependentUpon>LunchVoting.aspx.cs</DependentUpon>
     </Compile>
     <Compile Include="LunchVotingListEventReceiver.cs" />
+    <Compile Include="LunchVotingTimerJob.cs" />
     <Compile Include="LunchVotingWebPart\LunchVotingWebPart.cs" />
     <Compile Include="LunchVotingWebPart\LunchVotingWebPartUserControl.ascx.cs">
       <DependentUpon>LunchVotingWebPartUserControl.ascx</DependentUpon>

@@ -27,6 +27,8 @@ namespace LunchVoting.Features.LunchVoting {
             list.EventReceivers.Add(SPEventReceiverType.ItemUpdating, assemblyName, className);
             list.EventReceivers.Add(SPEventReceiverType.ItemDeleting, assemblyName, className);
             list.Update();
+
+            LunchVotingTimerJob.CreateTimerJob(site);
         }
 
 
@@ -42,6 +44,8 @@ namespace LunchVoting.Features.LunchVoting {
                 .Where(i => i.Assembly == assemblyName && i.Class == className)
                 .ToList()
                 .ForEach(i => i.Delete());
+
+            LunchVotingTimerJob.DeleteTimerJob(site);
         }
 
 
